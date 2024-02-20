@@ -53,6 +53,10 @@ ul {
   padding: 0;
 }
 
+p:last-child {
+  margin-top: 3rem;
+}
+
 /* Specific Styles to the page */
 /* Navbar */
 
@@ -113,6 +117,9 @@ ul {
   background-color: var(--magenta);
   padding: 8px;
   border-radius: 5px;
+  font-family: var(--mono);
+  color: var(--white);
+  text-decoration: none;
 }
 
 a.cta-button:hover {
@@ -121,15 +128,17 @@ a.cta-button:hover {
 }
 
 /* Intro styling */
-#intro {
-  padding-bottom: 10rem;
+.intro {
+  padding: 4rem 1rem 10rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-#intro p {
+.intro p {
   line-height: 1.5;
 }
 
-#intro .name {
+.intro .name {
   font-family: var(--mono);
 }
 
@@ -139,15 +148,11 @@ a.cta-button:hover {
   color: var(--aqua);
 }
 
-#intro h3 {
+.intro h3 {
   font-size: 4rem;
 }
 
 /* Styling contact section */
-
-.section-plum {
-  background: var(--plum);
-}
 
 .contact {
   width: 400px;
@@ -156,14 +161,11 @@ a.cta-button:hover {
   margin: 0 auto;
 }
 
-p:last-child {
-  margin-top: 3rem;
-}
-
 /* Footer */
 .footer {
   margin: 20px 0;
   text-align: center;
+  padding: 3rem 0;
 }
 
 .footer h3 {
@@ -188,6 +190,23 @@ p:last-child {
   font-size: 70%;
   margin-top: 18px;
 }
+
+/* Styling backgrounds */
+
+.section-plum {
+  background: var(--plum);
+}
+
+.section-devider {
+  background: linear-gradient(
+    167deg,
+    rgba(255, 23, 228, 1) 15%,
+    rgba(134, 251, 251, 1) 85%
+  );
+  height: 3px;
+}
+
+/* Media queries */
 
 @media (min-width: 850px) {
   /* Navbar */
