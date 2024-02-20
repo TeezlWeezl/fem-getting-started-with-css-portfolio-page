@@ -197,6 +197,10 @@ a.cta-button:hover {
   background: var(--plum);
 }
 
+.section-dkblue {
+  background: var(--dkblue);
+}
+
 .section-devider {
   background: linear-gradient(
     167deg,
