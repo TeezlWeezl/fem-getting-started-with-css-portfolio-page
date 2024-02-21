@@ -215,7 +215,7 @@ a.cta-button:hover {
 /* Styling contact section */
 
 .contact {
-  width: 400px;
+  max-width: 400px;
   text-align: center;
   padding: 3rem 1rem;
   margin: 0 auto;
@@ -255,10 +255,12 @@ a.cta-button:hover {
 
 .section-plum {
   background: var(--plum);
+  min-width: 100%;
 }
 
 .section-dkblue {
   background: var(--dkblue);
+  min-width: 100%;
 }
 
 .section-devider {
@@ -271,6 +273,12 @@ a.cta-button:hover {
 }
 
 /* Media queries */
+
+@media (max-width: 400px) {
+  .intro h3 {
+    font-size: 2.5rem;
+  }
+}
 
 @media (min-width: 850px) {
   /* Navbar */
